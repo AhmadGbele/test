@@ -1,5 +1,5 @@
 pipeline {
-    //agent { docker { image 'python:3-alpine' } }
+    //agent { docker { dockerfile true } }
     agent { docker { image 'python_with_pytest:latest' } }
     // agent any
     stages {
